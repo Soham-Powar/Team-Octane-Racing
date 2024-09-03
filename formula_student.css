@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+body {
+    margin: 0;
+    background-color: #000;
+    padding-top: 60px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+.navbar {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000;
+    transition: top 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    padding: 16px;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+.nav-links a.active {
+    color: #a00000;
+    font-weight: 900;
+}
+
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #000000a7;
+    color: white;
+    width: 100px;
+    top: 100%;
+    left: 0;
+    background-color: #000000a7;
+    display: none;
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+nav img {
+    width: 140px;
+}
+
+
+.nav-links {
+    text-align: right;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    padding-left: 15px;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    color: #AC0101;
+}
+
+
+.showteam:hover .dropdown {
+    display: block;
+}
+
+
+.showteam:hover .dropdown {
+    display: block;
+}
+
+.showteam .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000a7;
+    color: white;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    min-width: 100px;
+    z-index: 1000;
+}
+
+nav .fa {
+    display: none;
+}
+
+.showteam ul {
+    text-align: center;
+}
+
+.showteam {
+    position: relative;
+}
+
+.showteam ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.showteam ul li a {
+    font-size: 0.75rem;
+}
+.footer {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    color: #fff;
+    align-items: center;
+}
+
+.cnts {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+
+
+.logo a img {
+    padding-top: 30px;
+}
+
+.copyright {
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 10px;
+}
+@media (max-width: 900px) {
+
+    .nav-links a,
+    .dropdown-container {
+        display: none;
+    }
+
+    .navbar .icon {
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar.responsive .nav-links a,
+    .navbar.responsive .dropdown-container {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    .navbar.responsive .dropdown {
+        position: relative;
+        background-color: #333;
+    }
+    .footer {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .footer .logo a img {
+        padding-top: 10px;
+    }
+   
+}
+.fstextbox {
+    width: 90%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    text-align: center;
+}
+
+.fstextbox h1 {
+    font-size: 90px;
+    color: white;
+    font-weight: 900;
+
+}
+
+.eventcard {
+    transform-style: preserve-3d;
+    transition: all 0.9s ease;
+}
+
+.eventcard:hover {
+    transform: rotateY(180deg);
+}
+
+.front_event_card {
+    backface-visibility: hidden;
+}
+
+.back_event_card {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    padding: 0px 30px;
+    color: white;
+    font-size: 17px;
+}
+.grid-container {
+    display: flex;
+    background-color: black;
+    padding-top: 40px;
+    width: 60vw;
+    margin: auto;
+}
+
+.divss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12.2px;
+}
+
+.divss p {
+    font-size: 18px;
+}
+
+.divss h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.sidebar {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    background-color: white;
+    color: black;
+    width: 108.07px;
+    height: 707.31px;
+    display: flex;
+    font-size: 60px;
+    font-weight: 800;
+    margin-right: 8px;
+}
+
+.rightdivs {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+}
+
+.updivs {
+    display: flex;
+    height: 314.1px;
+    width: 497.91;
+}
+
+.updivs div {
+    width: 50%;
+    margin: 10px 10px;
+}
+
+.downdivs {
+    display: flex;
+    height: 403.98px;
+    width: 325.21.91px;
+}
+
+.downdivs div {
+    width: calc(100%/3);
+    margin: 10px;
+    margin-top: 18px;
+}
+
+.endurance,
+.autocross {
+    background-color: #494949;
+}
+
+.acceleration,
+.efficiency,
+.skidpad {
+    background-color: #AC0101;
+}
+
+.grid2-cont {
+    display: flex;
+    background-color: black;
+    padding-top: 40px;
+    width: 60vw;
+    margin: auto;
+}
+
+.leftdivs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1040px;
+}
+
+.divz {
+    height: 259px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: relative;
+    transition: transform 1s ease;
+    overflow: hidden;
+}
+
+.divz:hover {
+    transform: scale(1.04);
+}
+
+.divz h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.divz p {
+    text-align: justify;
+    width: 70%;
+    color: white;
+    padding-left: 60px;
+    font-size: 20px;
+    display: none;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.divz:hover p {
+    display: block;
+}
+
+
+
+.points-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    flex-direction: row;
+}
+
+.points-number {
+    font-size: 90px;
+    color: white;
+    margin-right: 1px;
+    font-weight: 900;
+}
+
+.points-vertical {
+    font-size: 20px;
+    color: white;
+    writing-mode: vertical-rl;
+    transform: rotate(0deg);
+}
+
+.dyna {
+    transform: rotate(0deg);
+    height: 820.39px;
+}
+
+.bpp,
+.edp {
+    background-color: #AC0101;
+}
+
+.cpm {
+    background-color: #494949;
+}
+@media only screen and (max-width: 900px) {
+
+    .eventcard {
+        transform: rotateY(180deg);
+    }
+
+    .fstextbox {
+        width: 90%;
+        position: relative;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .fstextbox p{
+        text-align: justify;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .fstextbox h1 {
+        font-size: 48px;
+    }
+    .grid-container,
+    .grid2-cont {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 80px;
+        height: auto;
+        font-size: 40px;
+        margin-right: 0;
+        margin-bottom: 10px;
+        transform: rotate(0deg);
+    }
+
+    .rightdivs {
+        width: 100%;
+    }
+
+    .updivs,
+    .downdivs {
+        flex-direction: column;
+    }
+
+    .divss p {
+        font-size: 10px;
+    }
+
+    .divss h1 {
+        font-size: 24px;
+    }
+
+    .alpha {
+        font-size: 20px;
+    }
+
+    .updivs div,
+    .downdivs div {
+        width: 90%;
+        padding: 0;
+    }
+
+    .updivs div {
+        height: 49%;
+    }
+
+    .downdivs div {
+        height: 33%;
+    }
+
+    .endurance,
+    .autocross,
+    .acceleration,
+    .efficiency,
+    .skidpad {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .divz {
+        width: 98%;
+        margin-bottom: 20px;
+        margin-right: 5px;
+    }
+
+    .divz h1 {
+        font-size: 28px;
+    }
+
+    .divz p {
+        width: 90%;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .leftdivs {
+        padding: 0px;
+    }
+
+    .points-number {
+        display: none;
+    }
+
+    .points-vertical {
+        display: none;
+    }
+
+    .fstextbox {
+        width: 90%;
+        position: relative;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .fstextbox h1 {
+        font-size: 48px;
+    }
+
+    #noc {
+        display: block;
+    }
+
+
+}

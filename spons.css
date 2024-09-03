@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    padding-top: 60px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000;
+    transition: top 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    padding: 16px;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+.nav-links a.active {
+    color: #a00000;
+    font-weight: 900;
+}
+
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #000000a7;
+    color: white;
+    width: 100px;
+    top: 100%;
+    left: 0;
+    background-color: #000000a7;
+    display: none;
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+nav img {
+    width: 140px;
+}
+
+
+.nav-links {
+    text-align: right;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    padding-left: 15px;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    color: #AC0101;
+}
+
+
+.showteam:hover .dropdown {
+    display: block;
+}
+
+
+.showteam:hover .dropdown {
+    display: block;
+}
+
+.showteam .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000a7;
+    color: white;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    min-width: 100px;
+    z-index: 1000;
+}
+
+nav .fa {
+    display: none;
+}
+
+.showteam ul {
+    text-align: center;
+}
+
+.showteam {
+    position: relative;
+}
+
+.showteam ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.showteam ul li a {
+    font-size: 0.75rem;
+}
+
+.footer {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    color: #fff;
+    align-items: center;
+}
+
+.cnts {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+
+
+.logo a img {
+    padding-top: 30px;
+}
+
+.copyright {
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 10px;
+}
+
+@media (max-width: 900px) {
+
+    .nav-links a,
+    .dropdown-container {
+        display: none;
+    }
+
+    .navbar .icon {
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar.responsive .nav-links a,
+    .navbar.responsive .dropdown-container {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    .navbar.responsive .dropdown {
+        position: relative;
+        background-color: #333;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .footer .logo a img {
+        padding-top: 10px;
+    }
+
+}
+
+.fstextbox {
+    width: 90%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    text-align: center;
+}
+
+.fstextbox h1 {
+    font-size: 90px;
+    color: white;
+    font-weight: 900;
+
+}
+
+.sponshead {
+    color: #AC0101;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 60px;
+    font-weight: bolder;
+    line-height: normal;
+}
+
+.spons_message {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.spons_text {
+    font-size: 18px;
+    color: #fff;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+
+.sponsors {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.ourspons {
+    display: none;
+}
+
+.mainspons1 {
+    color: #AC0101;
+    font-size: 50px;
+    line-height: normal;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three items per row */
+    gap: 40px;
+    /* Space between grid items */
+    padding: 20px;
+    max-width: 1200px;
+    /* Ensure the grid doesn't exceed this width */
+    margin: 0 auto;
+    /* Center the grid */
+}
+
+.logo-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Smooth transition for hover and shadow */
+    width: 300px;
+    /* Fixed width */
+    height: 150px;
+    /* Fixed height */
+}
+
+.logo-item:hover,
+.logoitem1:hover {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+    box-shadow: 0 12px 24px rgb(255, 0, 0);
+    /* Increase shadow on hover */
+}
+
+.logo-item img {
+    max-width: 60%;
+    /* Set maximum width */
+    max-height: 60%;
+    /* Set maximum height */
+    height: auto;
+    margin: auto;
+    /* Center the image */
+    display: block;
+    /* Ensures image is treated as a block-level element */
+}
+
+.logogrid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 250px;
+    padding-top: 5%;
+    margin: auto;
+}
+
+.logoitem1 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px #0000005f;
+}
+
+.logoitem1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.logo-grid_past {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-item_past {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100px;
+    height: 50px;
+}
+
+.logo-item_past img {
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .fstextbox {
+        width: 90%;
+        position: relative;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .fstextbox p {
+        text-align: justify;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .fstextbox h1 {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .fstextbox {
+        display: none;
+    }
+
+    .logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .logo-item {
+        width: 70%;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .sponshead {
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .ourspons {
+        display: block;
+    }
+
+    .mainspons1 {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+
+    .spons_text {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .logogrid1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoitem1 {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .logoitem1 img {
+        max-width: 100%;
+    }
+
+    .logo-item img {
+        max-width: 50%;
+    }
+
+    .logo-grid_past {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 100%;
+        padding: 10px;
+
+    }
+
+    .logo-item_past {
+        width: 70%;
+        height: 25px;
+        padding: 10px;
+    }
+
+    .logo-item_past img {
+        max-width: 50%;
+    }
+}
