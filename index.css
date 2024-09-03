@@ -247,16 +247,22 @@ nav .fa {
     align-items: center;
 }
 
+.socials {
+    font-size: 22px;
+    padding-top: 20px;
+    font-weight: 900;
+}
+
+
+.logo a img {
+    padding-top: 10px;
+}
+
 .cnts {
     font-size: 18px;
     padding: 10px 0;
 }
 
-
-
-.logo a img {
-    padding-top: 30px;
-}
 
 .copyright {
     background-color: black;
@@ -405,6 +411,7 @@ nav .fa {
     font-size: 19px;
     padding-bottom: 30px;
     padding-top: 10px;
+    text-align: justify;
 }
 
 .info_home_car h1,

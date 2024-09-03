@@ -149,6 +149,16 @@ nav .fa {
     color: #fff;
     align-items: center;
 }
+.socials {
+    font-size: 22px;
+    padding-top: 20px;
+    font-weight: 900;
+}
+
+
+.logo a img {
+    padding-top: 10px;
+}
 
 .cnts {
     font-size: 18px;
