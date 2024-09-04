@@ -158,7 +158,16 @@ nav .fa {
     padding: 10px 0;
 }
 
+.socials {
+    font-size: 22px;
+    padding-top: 20px;
+    font-weight: 900;
+}
 
+
+.logo a img {
+    padding-top: 10px;
+}
 
 .logo a img {
     padding-top: 30px;
