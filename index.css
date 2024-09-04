@@ -226,7 +226,7 @@ nav .fa {
 }
 
 .count {
-    font-size: 96px;
+    font-size: 75px;
     font-weight: bolder;
 }
 
@@ -253,16 +253,16 @@ nav .fa {
     font-weight: 900;
 }
 
-
-.logo a img {
-    padding-top: 10px;
-}
-
 .cnts {
     font-size: 18px;
     padding: 10px 0;
 }
 
+
+
+.logo a img {
+    padding-top: 10px;
+}
 
 .copyright {
     background-color: black;

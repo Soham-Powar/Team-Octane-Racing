@@ -154,17 +154,6 @@ nav .fa {
     align-items: center;
 }
 
-.socials {
-    font-size: 22px;
-    padding-top: 20px;
-    font-weight: 900;
-}
-
-
-.logo a img {
-    padding-top: 10px;
-}
-
 .cnts {
     font-size: 18px;
     padding: 10px 0;
@@ -616,7 +605,7 @@ nav .fa {
     color: #fff;
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 1100px) {
     .carousel .list .item .content {
         padding-right: 0;
     }
