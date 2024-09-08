@@ -328,15 +328,11 @@ nav .fa {
 }
 
 .logo-item img {
-    max-width: 60%;
-    /* Set maximum width */
-    max-height: 60%;
-    /* Set maximum height */
-    height: auto;
+    /* max-width: 60%; */
+    /* max-height: 60%; */
     margin: auto;
-    /* Center the image */
     display: block;
-    /* Ensures image is treated as a block-level element */
+    width: 150px;
 }
 
 .logogrid1 {
