@@ -3,10 +3,10 @@
     padding: 0;
     font-family: 'Inter';
 }
+
 body {
     margin: 0;
     background-color: #000;
-    padding-top: 60px;
 }
 
 html,
@@ -14,6 +14,13 @@ body {
     height: 100%;
     margin: 0;
 }
+
+body {
+    padding-top: 60px;
+}
+
+/* HOME PAGE */
+
 .navbar {
     background-color: #000000;
     position: fixed;
@@ -39,8 +46,10 @@ body {
 }
 
 .nav-links a.active {
-    color: #a00000;
+    color: white;
     font-weight: 900;
+    background: red;
+    border-radius: 20px;
 }
 
 
@@ -89,7 +98,7 @@ nav img {
     color: #ffffff;
     text-decoration: none;
     font-size: 17px;
-    padding-left: 15px;
+    padding: 6px 24px;
     white-space: nowrap;
 }
 
