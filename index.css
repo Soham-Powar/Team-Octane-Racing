@@ -443,6 +443,13 @@ nav .fa {
     color: #AC0101;
 }
 
+#counter {
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
 @media (max-width: 900px) {
 
     .nav-links a,
@@ -523,6 +530,10 @@ nav .fa {
     .box span {
         font-size: 30px;
     }
+    
+    #counter {
+        font-size: 30px;
+    }
 
     .home_car,
     .home_team {
@@ -581,3 +592,6 @@ nav .fa {
         }
     }
 }
+
+
+
