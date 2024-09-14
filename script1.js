@@ -7,6 +7,7 @@ function updateCounter() {
 
     if (counterValue < targetValue) {
         counterValue += incrementSpeed;
+
         if (counterValue > targetValue) {
             counterValue = targetValue;
         }
@@ -17,4 +18,21 @@ function updateCounter() {
         counterElement.textContent = targetValue;
     }
 }
-updateCounter();
+
+function resetAndStartCounter() {
+    counterValue = 0;
+    updateCounter(); 
+}
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            resetAndStartCounter(); 
+        }
+    });
+}, {
+    threshold: 0.5 
+});
+
+const counterElement = document.getElementById('counter');
+observer.observe(counterElement);
