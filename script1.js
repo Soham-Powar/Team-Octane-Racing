@@ -1,6 +1,6 @@
 let counterValue = 0;
 const targetValue = 2011;
-const incrementSpeed = 50;  
+const incrementSpeed = 7;  
 
 function updateCounter() {
     const counterElement = document.getElementById('counter');
