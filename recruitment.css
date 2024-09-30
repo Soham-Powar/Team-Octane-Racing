@@ -269,6 +269,14 @@ main {
     color: #ffffff;
     text-align: center;
 }
+.section h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #c12121;
+    text-align: center;
+}
+
 
 .section p {
     font-size: 21px;
