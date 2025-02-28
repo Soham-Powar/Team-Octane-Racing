@@ -1,0 +1,850 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    padding-top: 60px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000;
+    transition: top 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    padding: 16px;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+.nav-links a.active {
+    color: #a00000;
+    font-weight: 900;
+}
+
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #000000a7;
+    color: white;
+    width: 100px;
+    top: 100%;
+    left: 0;
+    background-color: #000000a7;
+    display: none;
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+nav img {
+    width: 140px;
+}
+
+
+.nav-links {
+    text-align: right;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    padding-left: 15px;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    color: #AC0101;
+}
+
+
+.showteam:hover .dropdown {
+    display: block;
+}
+
+
+.showteam:hover .dropdown {
+    display: block;
+}
+
+.showteam .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000a7;
+    color: white;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    min-width: 100px;
+    z-index: 1000;
+}
+
+nav .fa {
+    display: none;
+}
+
+.showteam ul {
+    text-align: center;
+}
+
+.showteam {
+    position: relative;
+}
+
+.showteam ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.showteam ul li a {
+    font-size: 0.75rem;
+}
+
+.footer {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    color: #fff;
+    align-items: center;
+}
+
+.cnts {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+
+
+.logo a img {
+    padding-top: 30px;
+}
+
+.copyright {
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 10px;
+}
+
+.crowd-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.crowd-info_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.crowd-intro {
+    color: #fff;
+    padding: 10px;
+    padding-top: 50px;
+    width: 35%;
+}
+
+.crowd-intro h1 {
+    font-size: 35px;
+}
+
+.crowd-intro p {
+    font-size: 18px;
+    line-height: 1.5em;
+
+}
+.crowd-intro ul li {
+    line-height: 1.5em;
+    font-size: 18px;
+    color: #fff;
+}
+
+.crowd-pic img {
+    height: 50vh;
+    padding: 10px;
+
+}
+
+.car_cost {
+    width: 100%;
+    padding: 10px;
+}
+.car_cost_1 {
+    display: none;
+}
+
+.slabs {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000000;
+    min-height: 90vh;
+    width: 70vw;
+    margin: auto;
+    justify-content: center;
+}
+
+.slab_header {
+    background-color: #000;
+}
+
+.tier {
+    color: #FFFFFF;
+    font-size: 50px;
+    padding-top: 3%;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 5vh;
+}
+
+.flipcontainer {
+    position: relative;
+    align-items: center;
+    width: 305px;
+    height: 350px;
+    margin: 10px;
+}
+
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.front_card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 15px;
+}
+
+.back_card {
+    border-radius: 15px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #fafafa;
+    color: #000000;
+    transform: rotateY(180deg);
+}
+
+.front_card p {
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.slab_name {
+    font-size: 22px;
+    font-weight: bolder;
+    color: #000;
+    line-height: normal;
+    padding-top: 50px;
+
+}
+.slab_name1 {
+    font-size: 22px;
+    font-weight: bolder;
+    color: #000;
+    line-height: normal;
+    padding-top: 10px;
+
+}
+
+.slab_price {
+    font-size: 35px;
+    padding-top: 50px;
+    font-weight: bolder;
+    color: #000000;
+}
+
+.slab_price_1 {
+    font-size: 35px;
+    font-weight: bolder;
+    color: #000000;
+    padding-top: 5px;
+}
+
+.offerings {
+    color: #000;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bolder;
+    font-size: 35px;
+    line-height: normal;
+}
+
+.back_card ul {
+    list-style-type: disc;
+    padding-left: 20%;
+    padding-top: 15%;
+    font-size: 22px;
+}
+
+.back_card ul li {
+    color: #fff;
+}
+
+.reddiv {
+    background-color: #AC0101;
+}
+
+.reddiv p {
+    color: white;
+}
+
+.greydiv {
+    background-color: #494949;
+}
+
+.greydiv p {
+    color: white;
+}
+
+.whitediv ul li {
+    color: #000;
+}
+
+.lastdivs ul li {
+    padding-top: 0px;
+}
+
+
+
+.card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #ff0000;
+    /* Red color for year */
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.card p {
+    color: #ccc;
+    font-size: 16px;
+    text-align: left;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
+
+.custom-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #AC0101;
+    color: white;
+    font-size: 22px;
+    padding: 18px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.7s ease, background-color 0.7s ease, color 0.7s ease, box-shadow 0.7s ease;
+    text-align: center;
+    font-weight: bold;
+}
+
+.custom-button:hover {
+    transform: scale(1.2);
+    background-color: white;
+    color: #000000;
+    box-shadow: 0px 5px 25px #ff0000;
+}
+
+.media {
+    display: none;
+}
+
+.achievement_block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18%;
+    margin-right: 18%;
+
+}
+
+.achiv {
+    color: #ffffff;
+    font-size: 65px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.upperachieve {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.lowerachieve {
+    display: flex;
+    flex-direction: row;
+}
+
+.whiteachieve {
+    background-color: #ffffff;
+}
+
+.redachieve {
+    background-color: #ac0101;
+
+}
+
+.achievementss {
+    width: 20%;
+    height: auto;
+    justify-items: center;
+    padding: 50px;
+    border-radius: 15px;
+
+}
+
+.achievementss img {
+    width: 150px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.achievementss p {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.achievements {
+    width: 20%;
+    height: auto;
+    justify-items: center;
+    padding: 50px;
+    border-radius: 15px;
+
+}
+
+.achievementsss {
+    width: 20%;
+    height: auto;
+    justify-items: center;
+    padding: 50px;
+    border-radius: 15px;
+
+}
+
+.achievements img {
+    width: 150px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.achievements p {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 2px;
+}
+.youtube {
+    display: block;
+}
+
+.video{
+    width: 100%;
+    height: 90vh;
+    padding-top: 40px;
+}
+.guide {
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    padding: 5vh;
+}
+
+@media (max-width: 900px) {
+    .custom-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+}
+
+.logo_black {
+    width: 100%;
+    height: auto;
+    padding-top: 25%;
+}
+
+@media (max-width: 900px) {
+
+    .nav-links a,
+    .dropdown-container {
+        display: none;
+    }
+
+    .navbar .icon {
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar.responsive .nav-links a,
+    .navbar.responsive .dropdown-container {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    .navbar.responsive .dropdown {
+        position: relative;
+        background-color: #333;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: left;
+        align-items: flex-start;
+        padding-left: 10%;
+    }
+
+    .addresss {
+        padding-bottom: 20px;
+    }
+
+    .footer .logo a img {
+        padding-top: 10px;
+    }
+
+    .crowd-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    .crowd-info_1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    .crowd-intro {
+        width: 100%;
+    }
+
+    .crowd-pic img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .crowdtextbox h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .crowdtextbox p {
+        font-size: 14px;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .crowdfunding-section {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .crcontent,
+    .contribution {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .money_content,
+    .help_content {
+        width: 100%;
+    }
+
+    .money1,
+    .money {
+        margin-top: 20px;
+    }
+
+    .crowdfunding-section img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .car_cost {
+        width: 100%;
+        height: fit-content;
+        margin: 20px 0;
+    }
+    .car_cost_1 {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .slabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flipcontainer {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer .logo,
+    .footer .cnt,
+    .footer iframe {
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .regular {
+        display: none;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        width: 50%;
+        justify-content: center;
+        padding: 25px;
+        margin: 15px;
+    }
+
+    .redcolor {
+        background: #AC0101;
+    }
+
+    .greycolor {
+        background: #494949;
+    }
+
+    .whitecolor {
+        background: #ffffff;
+    }
+
+    .name_slab,
+    .name_slab_1 {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 900;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .white_name_slab,
+    .white_name_slab_1 {
+        color: #000000;
+        font-size: 25px;
+        font-weight: 900;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .white_name_slab_1 {
+        padding-bottom: 10px;
+    }
+
+    .name_slab_1 {
+        padding-bottom: 10px;
+    }
+
+    .media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contribute_slab p {
+        color: #fff;
+        margin: 5%;
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .white_contribute_slab p {
+        color: #000000;
+        margin: 5%;
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .tier {
+        font-size: 35px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        
+    }
+
+    .offfer ul li {
+        color: #fff;
+        font-size: 14px;
+        list-style: disc;
+        line-height: 1.5em;
+        padding-left: 10px;
+        text-align: left;text-align: left;
+    }
+
+    .offfer {
+        text-align: center;
+    }
+
+    .offfer ul {
+        list-style-position: inside;
+    }
+
+    .white_offfer ul li {
+        color: #000000;
+        font-size: 14px;
+        list-style: disc;
+        line-height: 1.5em;
+        padding-left: 10px;
+        font-weight: 300;
+        text-align: left;
+    }
+
+    .white_offfer {
+        text-align: center;
+    }
+
+    .white_offfer ul {
+        list-style-position: inside;
+    }
+    .video {
+        width: 100%;
+        height: 100vh;
+    }
+    .achiv {
+        font-size: 45px; 
+        text-align: left;
+    }
+    .achievement_block p {
+        text-align: left;
+    }
+    .upperachieve {
+        flex-direction: column;
+        text-align: left;
+        width: 100vw;
+    }
+    .achievements p .achievementss p {
+        text-align: left;
+    }
+    .achievementsss {
+        display: none;
+        padding: 0%;
+    }
+    .achievement_block {
+        display: none;
+    }
+}
