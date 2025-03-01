@@ -7,13 +7,17 @@
 body {
     margin: 0;
     background-color: #000;
-    padding-top: 60px;
 }
 
 html,
 body {
     height: 100%;
     margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
 }
 
 .navbar {
@@ -41,8 +45,12 @@ body {
 }
 
 .nav-links a.active {
-    color: #a00000;
+    .nav-links a.active {
+    color: white;
     font-weight: 900;
+    background: red;
+    border-radius: 20px;
+    }
 }
 
 
@@ -91,17 +99,12 @@ nav img {
     color: #ffffff;
     text-decoration: none;
     font-size: 17px;
-    padding-left: 15px;
+    padding: 6px 24px;
     white-space: nowrap;
 }
 
 .nav-links a:hover {
     color: #AC0101;
-}
-
-
-.showteam:hover .dropdown {
-    display: block;
 }
 
 
