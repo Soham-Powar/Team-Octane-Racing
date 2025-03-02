@@ -607,8 +607,13 @@ nav .fa {
         padding-top: 10px;
     }
 
-    .crowd-info, .crowd-info_1 {
+    .crowd-info {
         flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+    .crowd-info_1 {
+        flex-direction: column-reverse;
         align-items: center;
         text-align: left;
     }
