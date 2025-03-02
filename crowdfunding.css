@@ -495,6 +495,7 @@ nav .fa {
     color: #000;
     font-weight: bold;
     padding: 2px;
+    text-align: center;
 }
 
 .achievements {
@@ -543,13 +544,6 @@ nav .fa {
     padding: 5vh;
 }
 
-@media (max-width: 900px) {
-    .custom-button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
-}
 
 .logo_black {
     width: 100%;
@@ -613,27 +607,33 @@ nav .fa {
         padding-top: 10px;
     }
 
-    .crowd-info {
-        display: flex;
+    .crowd-info, .crowd-info_1 {
         flex-direction: column;
-        justify-content: space-evenly;
-        padding: 10px;
-    }
-
-    .crowd-info_1 {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-evenly;
-        padding: 10px;
+        align-items: center;
+        text-align: left;
     }
 
     .crowd-intro {
-        width: 100%;
+        width: 90%; /* Make text take up more width */
+        padding: 20px 0;
+    }
+
+    .crowd-intro h1 {
+        font-size: 28px; /* Reduce heading size for mobile */
+    }
+    .custom-button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+
+    .crowd-intro p, .crowd-intro ul li {
+        font-size: 16px; /* Reduce text size for mobile */
     }
 
     .crowd-pic img {
-        width: 100%;
         height: auto;
+        width: 90%; /* Make images responsive */
+        margin: 10px 0;
     }
 }
 
@@ -676,13 +676,14 @@ nav .fa {
     }
 
     .car_cost {
+        display: block;
         width: 100%;
-        height: fit-content;
-        margin: 20px 0;
+        padding:auto;
     }
     .car_cost_1 {
+        display: block;
         width: 100%;
-        margin: 20px 0;
+        padding: auto;
     }
 
     .slabs {
@@ -850,4 +851,72 @@ nav .fa {
     .achievement_block {
         display: none;
     }
+    .youtube {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        margin-top: 60px; /* Adjust based on navbar height */
+    }
+    
+    .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
+/* Progress Bar Styles */
+.progress-section {
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.progress-container {
+    width: 100%;
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem; /* Use relative units */
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #494949;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #AC0101;
+    width: 0; /* Initial width (will be updated dynamically) */
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    .progress-labels {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .progress-bar {
+        height: 15px; /* Thinner progress bar for mobile */
+    }
+
+    .progress-section {
+        padding: 15px; /* Reduce padding for smaller screens */
+        margin: 10px auto; /* Reduce margin for smaller screens */
+    }
+}
+
